@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 public class Array {
 
@@ -66,19 +65,19 @@ public class Array {
 
     //REVERSE ARRAYS 
 
-    public static void reverseArray(int number []){
-        int start = 0, end = number.length-1;
+    // public static void reverseArray(int number []){
+    //     int start = 0, end = number.length-1;
 
-        while(start<end){
-            //swap
-            int temp = number[end];
-            number[end] = number[start];
-            number[start] = temp;
+    //     while(start<end){
+    //         //swap
+    //         int temp = number[end];
+    //         number[end] = number[start];
+    //         number[start] = temp;
 
-            start++;
-            end--;
-        }
-    }
+    //         start++;
+    //         end--;
+    //     }
+    // }
 
 
     //PAIRS IN AN ARRAYS 
@@ -231,9 +230,9 @@ public class Array {
 
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int number[] = {10, 20, 30, 40};
-        reverseArray(number);
+        // Scanner sc = new Scanner(System.in);
+        // int number[] = {10, 20, 30, 40};
+        // reverseArray(number);
         // int marks [] = new int[30];
 
         // marks[0] = sc.nextInt(); //physics 
@@ -327,7 +326,14 @@ public class Array {
         // System.out.println(buyAndSellStock(prices));
 
 
+        int arr [] = {1, 3, 5};
+        // for(int num : arr){
+        //     System.out.print(num + " ");
+        // }
 
+        // for (int i=0;i<=arr.length;i++){
+        //     System.out.println(arr[i]);
+        // }
 
         
     } 
