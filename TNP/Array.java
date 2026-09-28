@@ -1,7 +1,7 @@
 public class Array {
     public static void main (String [] args){
-        int arr1 [] = {1, 2, 3, 4};
-        int arr2 [] = {1, 2, 3, 5};
+        int arr1 [] = {2, 1, 2, 3, 4, 2};
+        // int arr2 [] = {1, 2, 3, 5};
 
         // // sum 
         // int sum = 0;
@@ -22,7 +22,10 @@ public class Array {
         //         System.out.println("Odd : " + arr[i]);
         //     }
         // }
-        
+
+
+        //1 st method 
+
         // int count = 0;
         // for(int i=0;i<arr1.length;i++){
         //     for(int j=0;j<arr2.length;j++){
@@ -39,25 +42,39 @@ public class Array {
         // } else 
         //     System.out.println("Not Equal");
 
-        int n = arr1.length, m = arr2.length, i = 0, j = 0, c =0;
 
-        while(i <n && j<m){
-            if(arr1[i]!=arr2[j]){
-                System.out.println("Not equal");
-                break;
-            } else {
-                i++;
-                j++;
-                c++;
-                // continue;
+
+        // 2nd method 
+
+        // int n = arr1.length, m = arr2.length, i = 0, j = 0, c =0;
+
+        // while(i <n && j<m){
+        //     if(arr1[i]!=arr2[j]){
+        //         System.out.println("Not equal");
+        //         break;
+        //     } else {
+        //         i++;
+        //         j++;
+        //         c++;
+        //         // continue;
+        //     }
+        // }
+        // if(c==m){
+        //      System.out.println("Equal");
+        // }
+       
+        //FIRST ACCORANCE IN THE ARRAYS 
+        int n = arr1.length;
+        int key = 2;
+        int acc = Integer.MAX_VALUE;
+        for(int i=0;i<n;i++){
+            if(arr1[i] == key){
+                acc = Math.min(acc, i);
+
             }
         }
-        if(c==m){
-             System.out.println("Equal");
-        }
-       
 
-        
+        System.out.println(acc);
 
     }
 }
