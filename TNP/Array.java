@@ -64,17 +64,41 @@ public class Array {
         // }
        
         //FIRST ACCORANCE IN THE ARRAYS 
-        int n = arr1.length;
-        int key = 2;
-        int acc = Integer.MAX_VALUE;
-        for(int i=0;i<n;i++){
-            if(arr1[i] == key){
-                acc = Math.min(acc, i);
+        // int n = arr1.length;
+        // int key = 2;
+        // int acc = Integer.MIN_VALUE;
+        // for(int i=0;i<n;i++){
+        //     if(arr1[i] == key){
+        //         acc = Math.max(acc, i);
 
-            }
-        }
+        //     }
+        // }
 
-        System.out.println(acc);
+        // System.out.println(acc);
+        // int acc = -1;
+        // int key = 2;
+        // for(int i = arr1.length-1;i>=0;i++){
+        //     if(arr1[i]==key){
+        //         acc = i;
+        //         break;
+        //     }
+        // }
+
+        // System.out.println(acc);
+
+        // int n = arr1.length-1;
+        // arr1[0] = arr1[n];
+        // for(int i=1;i<n;i++){
+        //     arr1[i] = arr1[i-1];
+        // }
+
+        
+
+        // for(int i=0;i<n;i++){
+        //     System.out.print(arr1[i]+" ");
+        // }
+
+
 
     }
 }
