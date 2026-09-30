@@ -2,7 +2,7 @@
 
 public class Arrays2 {
     public static void main(String [] args){
-        Integer arr[] = {1, 2, 3, 4, 5 , 6};
+        int arr[]= {1, 2, 3, 4, 5 , 6};
         
         //LEFT SHIFT BY ONE 
 
@@ -56,21 +56,32 @@ public class Arrays2 {
         // System.out.print(Arrays.toString(arr));
 
 
-        int l = arr[0];
-        int sl = arr[0];
-        for(int i=1;i<arr.length;i++){
-            if(arr[i]>l){
-                sl = l;
-                l = arr[i];
-            }
+        // int l = arr[0];
+        // int sl = arr[0];
+        // for(int i=1;i<arr.length;i++){
+        //     if(arr[i]>l){
+        //         sl = l;
+        //         l = arr[i];
+        //     }
 
-            if(arr[i]<l && arr[i]>sl){
-                sl = arr[i];
-            }
+        //     if(arr[i]<l && arr[i]>sl){
+        //         sl = arr[i];
+        //     }
+        // }
+
+        // System.out.println(l);
+        // System.out.println(sl);
+
+
+        // fibonacci series 
+        int n = 5;
+        int f = 0, s = 1, next = 0;
+        for(int i=2;i<n;i++){
+            next = f + s;
+            f = s;
+            s = next;
+            
         }
-
-        System.out.println(l);
-        System.out.println(sl);
 
     }
     
